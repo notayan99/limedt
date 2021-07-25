@@ -29,6 +29,9 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 ODM_MANIFEST_SKUS += lemon
 ODM_MANIFEST_LEMON_FILES := hardware/st/nfc/aidl/nfc-service-default.xml
 
+# OTA assert
+TARGET_OTA_ASSERT_DEVICE := lime,lemon,pomelo
+
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
 
