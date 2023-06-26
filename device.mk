@@ -30,19 +30,16 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # NFC
+$(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
+TARGET_USES_ST_AIDL_NFC := true
+TARGET_NFC_SKU := lemon
+
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.st \
     com.android.nfc_extras \
     libchrome.vendor \
-    init.stnfc.rc \
-    nfc_nci.st21nfc.default \
     NfcNci \
     SecureElement \
     Tag
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/android.hardware.nfc.ese.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/android.hardware.nfc.hcef.xml \
-    frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/android.hardware.nfc.uicc.xml \
-    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_lemon/android.hardware.nfc.xml
+PRODUCT_PACKAGES += \
+    init.stnfc.rc

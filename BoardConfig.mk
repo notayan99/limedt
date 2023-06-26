@@ -27,7 +27,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
 
 # NFC
 ODM_MANIFEST_SKUS += lemon
-ODM_MANIFEST_LEMON_FILES := $(DEVICE_PATH)/manifest_lemon.xml
+ODM_MANIFEST_LEMON_FILES := hardware/st/nfc/aidl/nfc-service-default.xml
 
 # Properties
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
