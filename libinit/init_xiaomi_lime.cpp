@@ -18,8 +18,6 @@ static const variant_info_t lime_info = {
     .marketname = "Redmi 9T",
     .model = "M2010J19SG",
     .build_fingerprint = "Redmi/lime_global/lime:12/SKQ1.211202.001/V13.0.2.0.SJQMIXM:user/release-keys",
-
-    .nfc = false,
 };
 
 static const variant_info_t pomelo_info = {
@@ -31,8 +29,6 @@ static const variant_info_t pomelo_info = {
     .marketname = "Redmi 9 Power",
     .model = "M2010J19SL",
     .build_fingerprint = "Redmi/pomelo_global/pomelo:12/SKQ1.211202.001/V13.0.2.0.SJQMIXM:user/release-keys",
-
-    .nfc = false,
 };
 
 static const variant_info_t lemon_info = {
@@ -44,8 +40,6 @@ static const variant_info_t lemon_info = {
     .marketname = "Redmi 9T NFC",
     .model = "M2010J19SY",
     .build_fingerprint = "Redmi/lemon_global/lemon:12/SKQ1.211202.001/V13.0.2.0.SJQMIXM:user/release-keys",
-
-    .nfc = true,
 };
 
 static const std::vector<variant_info_t> variants = {
