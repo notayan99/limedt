@@ -308,6 +308,22 @@ vendor/lib/modules/modules.softdep
 vendor/lib/modules/qca_cld3_wlan.ko
 vendor/lib/modules/rdbg.ko
 
+# Mlipay
+vendor/bin/mlipayd@1.1
+vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
+vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.3-service.rc
+-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml
+-vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml
+vendor/lib64/libmlipay.so
+vendor/lib64/libmlipay@1.1.so
+vendor/lib64/libwvkeybox.so
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so
+vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.3.so
+
 # NFC
 vendor/bin/STFlashTool
 vendor/etc/libnfc-hal-st.conf
