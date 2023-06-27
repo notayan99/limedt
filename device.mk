@@ -54,3 +54,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     init.stnfc.rc
+
+# Overlays
+PRODUCT_PACKAGES += \
+    FrameworksResLime \
+    SettingsProviderResLemon \
+    SettingsProviderResLime \
+    SettingsProviderResPomelo \
+    SystemUIResLime \
+    WifiResLemon \
+    WifiResLime \
+    WifiResPomelo
