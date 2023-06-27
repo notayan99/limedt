@@ -29,6 +29,10 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# IFAAService
+PRODUCT_PACKAGES += \
+    IFAAService
+
 # NFC
 $(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
 TARGET_USES_ST_AIDL_NFC := true
